@@ -1,0 +1,1 @@
+It was originally supposed to be a personal study of Java using Spring, Hibernate, Angular, and possibly Flutter (I'm not sure yet), but I might turn it into my website to showcase my portfolio and skills at the same time.
