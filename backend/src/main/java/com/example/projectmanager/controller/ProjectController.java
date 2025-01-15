@@ -1,37 +1,38 @@
-package com.example.productmanager.controller;
+package com.example.projectmanager.controller;
 
-import com.example.productmanager.model.Product;
-import com.example.productmanager.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.example.projectmanager.model.Project;
+import com.example.projectmanager.service.ProjectService;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/products")
-public class ProductController {
+@RequestMapping("/projects")
+public class ProjectController {
 
     @Autowired
-    private ProductService service;
+    private ProjectService service;
 
     @GetMapping
-    public List<Product> getProducts() {
+    public List<Project> getProjects() {
         return service.findAll();
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable Long id) {
+    public Project getProjectById(@PathVariable Long id) {
         return service.findById(id);
     }
 
     @PostMapping
-    public Product createProduct(@RequestBody Product product) {
+    public Project createProject(@RequestBody Project product) {
         return service.save(product);
     }
     
     @PutMapping("/{id}")
-    public Product putMethodName(@PathVariable Long id, @RequestBody Product product) {
-        Product existingProduct = service.findById(id);
+    public Project putMethodName(@PathVariable Long id, @RequestBody Project product) {
+        Project existingProduct = service.findById(id);
         if (existingProduct != null) {
             existingProduct.setName(product.getName());
             existingProduct.setPrice(product.getPrice());

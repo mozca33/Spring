@@ -1,23 +1,24 @@
-package com.example.productmanager.service;
+package com.example.projectmanager.service;
 
-import com.example.productmanager.model.Product;
-import com.example.productmanager.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.example.projectmanager.model.Project;
+import com.example.projectmanager.repository.ProjectRepository;
 
 import java.util.List;
 
 @Service
-public class ProductService {
+public class ProjectService {
 
     @Autowired
-    private ProductRepository repository;
+    private ProjectRepository repository;
 
-    public List<Product> findAll() {
+    public List<Project> findAll() {
         return repository.findAll();
     }
 
-    public Product save(Product product) {
+    public Project save(Project product) {
         return repository.save(product);
     }
 
@@ -25,7 +26,7 @@ public class ProductService {
         repository.deleteById(id);
     }
 
-    public Product findById(Long id) {
+    public Project findById(Long id) {
         return repository.findById(id).orElse(null);
     }
 }
