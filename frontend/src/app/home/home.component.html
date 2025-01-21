@@ -1,55 +1,53 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Dev Rafael Felipe</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<body>
+  <main class="home">
+    <section class="title">
+      <h1>{{ title }}</h1>
+      <p>
+        Este é um site que eu fiz para me apresentar como desenvolvedor e
+        demonstrar as minhas habilidades na área.
+      </p>
+    </section>
+    <section class="description">
+      <a href="/about">
+        <div class="description-text">
+          <h2>{{ description }}</h2>
+          <p>
+            Sou um desenvolvedor fullstack, formando em Ciência da Computação,
+            possuo experiência de 2 anos e 2 meses com C#, SQL Server, VB.NET e
+            JavaScript na LG Lugar de Gente, Atualmente estou estudando Java
+            utilizando Spring com hibernate, Angular e Flutter, que inclusive
+            são as tecnologias utilizadas para montar esse site.
+          </p>
+        </div>
+        <img class="icon2 arrow" src="assets/arrow-icon.svg" alt="Arrow" />
+      </a>
+    </section>
 
-  <body>
-    <header>
-      <nav>
+    <section class="contact">
+      <h2>Contato</h2>
+      <label for="name">Nome:</label>
+      <form class="group">
         <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <img class="icon" src="assets/lock-icon.svg" alt="Lock icon" />
+          <input
+            class="input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="User"
+          />
+          <img class="icon" src="assets/user-icon.svg" alt="User Icon" />
+          <input
+            class="input"
+            type="text"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+
+          <button class="button-submit-text" type="submit">Enviar</button>
         </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="home">
-        <h1>Bem vindo ao meu site!</h1>
-        <p>
-          Este é um site que eu fiz para me apresentar como desenvolvedor e
-          demonstrar as minhas habilidades na área.
-        </p>
-      </section>
-      <section id="about">
-        <h2>Sobre mim</h2>
-        <p>
-          Sou um desenvolvedor fullstack, formando em Ciência da Computação,
-          possuo experiência de 2 anos e 2 meses com C#, SQL Server, VB.NET e
-          JavaScript na LG Lugar de Gente, Atualmente estou estudando Java
-          utilizando Spring com hibernate, Angular e Flutter, que inclusive são
-          as tecnologias utilizadas para montar esse site.
-        </p>
-      </section>
-
-      <section id="contact">
-        <h2>Contato</h2>
-        <form>
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" />
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Dev Rafael</p>
-    </footer>
-  </body>
-</html>
+      </form>
+    </section>
+  </main>
+</body>

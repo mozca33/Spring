@@ -69,7 +69,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 					<configuration>
-						<mainClass>com.example.productmanager.ProductManagerApp</mainClass>
+						<mainClass>com.example.projectmanager.ProjectManagerApp</mainClass>
 					</configuration>
 			</plugin>
 		</plugins>

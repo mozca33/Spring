@@ -26,17 +26,16 @@ public class ProjectController {
     }
 
     @PostMapping
-    public Project createProject(@RequestBody Project product) {
-        return service.save(product);
+    public Project createProject(@RequestBody Project project) {
+        return service.save(project);
     }
     
     @PutMapping("/{id}")
-    public Project putMethodName(@PathVariable Long id, @RequestBody Project product) {
+    public Project putMethodName(@PathVariable Long id, @RequestBody Project project) {
         Project existingProduct = service.findById(id);
         if (existingProduct != null) {
-            existingProduct.setName(product.getName());
-            existingProduct.setPrice(product.getPrice());
-            existingProduct.setDescription(product.getDescription());
+            existingProduct.setName(project.getName());
+            existingProduct.setDescription(project.getDescription());
             
             return service.save(existingProduct);
         }

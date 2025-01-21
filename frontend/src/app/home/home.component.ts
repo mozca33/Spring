@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../services/project.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +7,12 @@ import { ProjectService } from '../services/project.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  title = 'Home';
+  description = 'Sobre mim';
+  constructor(private router: Router) {}
   projects: any[] = [];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.router.navigate(['/']);
+  }
 }
