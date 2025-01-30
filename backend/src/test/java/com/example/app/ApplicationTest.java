@@ -3,10 +3,10 @@ package com.example.productmanager;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.example.projectmanager.ProjectManagerApp;
+import com.example.Application;
 
-@SpringBootTest(classes = ProjectManagerApp.class)  // Aponte para a classe principal
-class ProjectManagerAppTests {
+@SpringBootTest(classes = Application.class)  // Aponte para a classe principal
+class ApplicationTests {
 
     @Test
     void contextLoads() {

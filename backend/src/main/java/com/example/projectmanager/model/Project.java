@@ -10,10 +10,12 @@ public class Project {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-
+//#region PRIVATE PROPERTIES
 	private Long id;
 	private String name;
 	private String description;
+//#endregion
+
 //#region CONSTRUCTORS
 	public Project(){}
 
@@ -39,15 +41,11 @@ public class Project {
 //#endregion
 
 //#region SETTERS	
-public void setId(Long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
 	public void setName(String name) {
-		if (name == null || name.isBlank())
-		{
-			throw new IllegalArgumentException("Nome não pode ser null ou vazio");
-		}
 		this.name = name;
 	}
 
