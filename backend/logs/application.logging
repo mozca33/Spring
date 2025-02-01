@@ -1,0 +1,406 @@
+2025-01-31 21:12:23 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:12:23 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:12:23 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:12:23 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-31 21:12:23 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-31 21:12:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:12:24 - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:12:24 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:12:24 - Starting service [Tomcat]
+2025-01-31 21:12:24 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:12:24 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:12:24 - Root WebApplicationContext: initialization completed in 1449 ms
+2025-01-31 21:12:25 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:12:25 - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-01-31 21:12:25 - HHH000026: Second-level cache disabled
+2025-01-31 21:12:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:12:25 - HikariPool-1 - Starting...
+2025-01-31 21:12:25 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1719dabe
+2025-01-31 21:12:25 - HikariPool-1 - Start completed.
+2025-01-31 21:12:25 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:12:25 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:12:25 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:12:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-31 21:12:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:12:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-31 21:12:27 - LiveReload server is running on port 35729
+2025-01-31 21:12:27 - Exposing 1 endpoint beneath base path '/actuator'
+2025-01-31 21:12:27 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-31 21:12:27 - Started Application in 4.49 seconds (process running for 4.853)
+2025-01-31 21:12:41 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-31 21:12:41 - Initializing Servlet 'dispatcherServlet'
+2025-01-31 21:12:41 - Completed initialization in 1 ms
+2025-01-31 21:12:41 - Resolved [jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.time.LocalDate'. Check configuration for 'birthDate']
+2025-01-31 21:12:47 - Resolved [jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.time.LocalDate'. Check configuration for 'birthDate']
+2025-01-31 21:16:35 - Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
+2025-01-31 21:16:35 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-31 21:16:35 - Graceful shutdown complete
+2025-01-31 21:16:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:16:35 - HikariPool-1 - Shutdown initiated...
+2025-01-31 21:16:35 - HikariPool-1 - Shutdown completed.
+2025-01-31 21:16:35 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:16:35 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:16:35 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:16:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:16:35 - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:16:35 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:16:35 - Starting service [Tomcat]
+2025-01-31 21:16:35 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:16:35 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:16:35 - Root WebApplicationContext: initialization completed in 444 ms
+2025-01-31 21:16:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:16:35 - HHH000026: Second-level cache disabled
+2025-01-31 21:16:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:16:35 - HikariPool-2 - Starting...
+2025-01-31 21:16:35 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46fb2dd2
+2025-01-31 21:16:35 - HikariPool-2 - Start completed.
+2025-01-31 21:16:35 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:16:35 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:16:35 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:16:35 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.example.user.model.User' due to: null
+2025-01-31 21:16:35 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.example.user.model.User' due to: null
+2025-01-31 21:16:35 - HikariPool-2 - Shutdown initiated...
+2025-01-31 21:16:35 - HikariPool-2 - Shutdown completed.
+2025-01-31 21:16:35 - Stopping service [Tomcat]
+2025-01-31 21:16:35 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-31 21:16:35 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.example.user.model.User' due to: null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.example.Application.main(Application.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity 'com.example.user.model.User' due to: null
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 18 common frames omitted
+Caused by: org.hibernate.InstantiationException: Could not instantiate entity 'com.example.user.model.User' due to: null
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:100) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.lambda$prepareMappingModel$14(AbstractEntityPersister.java:5343) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.internal.util.LazyValue.getValue(LazyValue.java:30) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.internal.UnsavedValueFactory.getUnsavedIdentifierValue(UnsavedValueFactory.java:49) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.metamodel.mapping.internal.BasicEntityIdentifierMappingImpl.<init>(BasicEntityIdentifierMappingImpl.java:119) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.generateIdentifierMapping(AbstractEntityPersister.java:5712) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.lambda$prepareMappingModel$15(AbstractEntityPersister.java:5348) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.processSubPart(MappingModelCreationProcess.java:163) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappingModel(AbstractEntityPersister.java:5346) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappingModel(AbstractEntityPersister.java:5192) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.execute(MappingModelCreationProcess.java:84) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.process(MappingModelCreationProcess.java:42) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:200) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:373) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:302) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:97) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	... 41 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	NotNull cannot be resolved to a type
+
+	at com.example.user.model.User.<init>(User.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	... 44 common frames omitted
+2025-01-31 21:16:42 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:16:42 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:16:42 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:16:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:16:42 - Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:16:42 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:16:42 - Starting service [Tomcat]
+2025-01-31 21:16:42 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:16:42 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:16:42 - Root WebApplicationContext: initialization completed in 400 ms
+2025-01-31 21:16:42 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:16:42 - HHH000026: Second-level cache disabled
+2025-01-31 21:16:42 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:16:42 - HikariPool-3 - Starting...
+2025-01-31 21:16:42 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@569cae10
+2025-01-31 21:16:42 - HikariPool-3 - Start completed.
+2025-01-31 21:16:42 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:16:42 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:16:42 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:16:42 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-31 21:16:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:16:43 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-31 21:16:43 - LiveReload server is running on port 35729
+2025-01-31 21:16:43 - Exposing 1 endpoint beneath base path '/actuator'
+2025-01-31 21:16:43 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-31 21:16:43 - Started Application in 1.115 seconds (process running for 260.889)
+2025-01-31 21:16:43 - Condition evaluation unchanged
+2025-01-31 21:17:57 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-31 21:17:57 - Initializing Servlet 'dispatcherServlet'
+2025-01-31 21:17:57 - Completed initialization in 1 ms
+2025-01-31 21:17:57 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.name: O nome não pode conter números ou caracteres especiais., registerUser.user.password: A senha deve ter ao menos uma letra maiúscula, um número e um caractere especial., registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:19:35 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-31 21:19:35 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-31 21:19:35 - Graceful shutdown complete
+2025-01-31 21:19:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:19:35 - HikariPool-3 - Shutdown initiated...
+2025-01-31 21:19:35 - HikariPool-3 - Shutdown completed.
+2025-01-31 21:19:35 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:19:35 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:19:35 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:19:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:19:35 - Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:19:36 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:19:36 - Starting service [Tomcat]
+2025-01-31 21:19:36 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:19:36 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:19:36 - Root WebApplicationContext: initialization completed in 384 ms
+2025-01-31 21:19:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:19:36 - HHH000026: Second-level cache disabled
+2025-01-31 21:19:36 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:19:36 - HikariPool-4 - Starting...
+2025-01-31 21:19:36 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57096c51
+2025-01-31 21:19:36 - HikariPool-4 - Start completed.
+2025-01-31 21:19:36 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:19:36 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:19:36 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:19:36 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-31 21:19:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:19:36 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-31 21:19:36 - LiveReload server is running on port 35729
+2025-01-31 21:19:36 - Exposing 1 endpoint beneath base path '/actuator'
+2025-01-31 21:19:36 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-31 21:19:36 - Started Application in 0.995 seconds (process running for 434.009)
+2025-01-31 21:19:36 - Condition evaluation unchanged
+2025-01-31 21:19:39 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-31 21:19:39 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-31 21:19:39 - Graceful shutdown complete
+2025-01-31 21:19:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:19:39 - HikariPool-4 - Shutdown initiated...
+2025-01-31 21:19:39 - HikariPool-4 - Shutdown completed.
+2025-01-31 21:19:39 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:19:39 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:19:39 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:19:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:19:39 - Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:19:39 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:19:39 - Starting service [Tomcat]
+2025-01-31 21:19:39 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:19:39 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:19:39 - Root WebApplicationContext: initialization completed in 449 ms
+2025-01-31 21:19:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:19:39 - HHH000026: Second-level cache disabled
+2025-01-31 21:19:39 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:19:39 - HikariPool-5 - Starting...
+2025-01-31 21:19:39 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@229b0c27
+2025-01-31 21:19:39 - HikariPool-5 - Start completed.
+2025-01-31 21:19:39 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:19:39 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:19:39 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:19:39 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-31 21:19:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:19:39 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-31 21:19:40 - LiveReload server is running on port 35729
+2025-01-31 21:19:40 - Exposing 1 endpoint beneath base path '/actuator'
+2025-01-31 21:19:40 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-31 21:19:40 - Started Application in 1.151 seconds (process running for 437.645)
+2025-01-31 21:19:40 - Condition evaluation unchanged
+2025-01-31 21:19:47 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-31 21:19:47 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-31 21:19:47 - Graceful shutdown complete
+2025-01-31 21:19:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:19:47 - HikariPool-5 - Shutdown initiated...
+2025-01-31 21:19:47 - HikariPool-5 - Shutdown completed.
+2025-01-31 21:19:47 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:19:47 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:19:47 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:19:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:19:48 - Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:19:48 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:19:48 - Starting service [Tomcat]
+2025-01-31 21:19:48 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:19:48 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:19:48 - Root WebApplicationContext: initialization completed in 350 ms
+2025-01-31 21:19:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:19:48 - HHH000026: Second-level cache disabled
+2025-01-31 21:19:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:19:48 - HikariPool-6 - Starting...
+2025-01-31 21:19:48 - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7065441e
+2025-01-31 21:19:48 - HikariPool-6 - Start completed.
+2025-01-31 21:19:48 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:19:48 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:19:48 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:19:48 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-31 21:19:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:19:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-31 21:19:48 - LiveReload server is running on port 35729
+2025-01-31 21:19:48 - Exposing 1 endpoint beneath base path '/actuator'
+2025-01-31 21:19:48 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-31 21:19:48 - Started Application in 0.984 seconds (process running for 446.186)
+2025-01-31 21:19:48 - Condition evaluation unchanged
+2025-01-31 21:22:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-31 21:22:38 - Initializing Servlet 'dispatcherServlet'
+2025-01-31 21:22:38 - Completed initialization in 1 ms
+2025-01-31 21:22:38 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.password: A senha deve ter ao menos uma letra maiúscula, um número e um caractere especial., registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:23:35 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.password: A senha deve ter ao menos uma letra maiúscula, um número e um caractere especial., registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:23:39 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX., registerUser.user.password: A senha deve ter ao menos uma letra maiúscula, um número e um caractere especial.]
+2025-01-31 21:24:00 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:24:24 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-01-31 21:24:24 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-31 21:24:24 - Graceful shutdown complete
+2025-01-31 21:24:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:24:24 - HikariPool-6 - Shutdown initiated...
+2025-01-31 21:24:24 - HikariPool-6 - Shutdown completed.
+2025-01-31 21:24:25 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:24:25 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:24:25 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:24:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:24:25 - Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:24:25 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:24:25 - Starting service [Tomcat]
+2025-01-31 21:24:25 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:24:25 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:24:25 - Root WebApplicationContext: initialization completed in 463 ms
+2025-01-31 21:24:25 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:24:25 - HHH000026: Second-level cache disabled
+2025-01-31 21:24:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:24:25 - HikariPool-7 - Starting...
+2025-01-31 21:24:25 - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56f22bd8
+2025-01-31 21:24:25 - HikariPool-7 - Start completed.
+2025-01-31 21:24:25 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:24:25 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:24:25 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:24:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-31 21:24:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:24:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-31 21:24:26 - LiveReload server is running on port 35729
+2025-01-31 21:24:26 - Exposing 1 endpoint beneath base path '/actuator'
+2025-01-31 21:24:26 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-31 21:24:26 - Started Application in 1.219 seconds (process running for 723.588)
+2025-01-31 21:24:26 - Condition evaluation unchanged
+2025-01-31 21:24:30 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-31 21:24:30 - Initializing Servlet 'dispatcherServlet'
+2025-01-31 21:24:30 - Completed initialization in 1 ms
+2025-01-31 21:24:30 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:25:11 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:26:13 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:28:16 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.phone: O telefone deve estar no formato (XX) XXXX-XXXX.]
+2025-01-31 21:28:23 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-01-31 21:28:23 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-31 21:28:23 - Graceful shutdown complete
+2025-01-31 21:28:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:28:23 - HikariPool-7 - Shutdown initiated...
+2025-01-31 21:28:23 - HikariPool-7 - Shutdown completed.
+2025-01-31 21:28:23 - Starting Application using Java 21.0.5 with PID 12640 (C:\Users\Rafael\Documents\Projeto Spring\backend\target\classes started by Rafael in C:\Users\Rafael\Documents\Projeto Spring\backend)
+2025-01-31 21:28:23 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-01-31 21:28:23 - No active profile set, falling back to 1 default profile: "default"
+2025-01-31 21:28:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 21:28:23 - Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2025-01-31 21:28:23 - Tomcat initialized with port 8080 (http)
+2025-01-31 21:28:23 - Starting service [Tomcat]
+2025-01-31 21:28:23 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-31 21:28:23 - Initializing Spring embedded WebApplicationContext
+2025-01-31 21:28:23 - Root WebApplicationContext: initialization completed in 390 ms
+2025-01-31 21:28:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-31 21:28:24 - HHH000026: Second-level cache disabled
+2025-01-31 21:28:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-31 21:28:24 - HikariPool-8 - Starting...
+2025-01-31 21:28:24 - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51c6e2a0
+2025-01-31 21:28:24 - HikariPool-8 - Start completed.
+2025-01-31 21:28:24 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-31 21:28:24 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-31 21:28:24 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-31 21:28:24 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-31 21:28:24 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 21:28:24 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-31 21:28:24 - LiveReload server is running on port 35729
+2025-01-31 21:28:24 - Exposing 1 endpoint beneath base path '/actuator'
+2025-01-31 21:28:24 - Tomcat started on port 8080 (http) with context path '/'
+2025-01-31 21:28:24 - Started Application in 1.1 seconds (process running for 962.001)
+2025-01-31 21:28:24 - Condition evaluation unchanged
+2025-01-31 21:28:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-31 21:28:58 - Initializing Servlet 'dispatcherServlet'
+2025-01-31 21:28:58 - Completed initialization in 0 ms
+2025-01-31 21:56:12 - Resolved [com.example.exception.ApiException: O usuário já está registrado.]
+2025-01-31 21:56:16 - Resolved [com.example.exception.ApiException: O usuário já está registrado.]
+2025-01-31 21:57:26 - Resolved [jakarta.validation.ConstraintViolationException: registerUser.user.name: O nome não pode conter números ou caracteres especiais.]
+2025-01-31 22:13:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-31 22:13:44 - Graceful shutdown complete
+2025-01-31 22:13:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-31 22:13:44 - HikariPool-8 - Shutdown initiated...
+2025-01-31 22:13:44 - HikariPool-8 - Shutdown completed.
