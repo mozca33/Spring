@@ -1,4 +1,4 @@
-package com.example.user.validator;
+package com.example.validator;
 
 
 import jakarta.validation.Payload;
@@ -12,7 +12,7 @@ import java.lang.annotation.RetentionPolicy;
 @Target({ ElementType.TYPE, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValidPassword {
-    String message() default "As senhas não coincidem";
+    String message = ValidationMessages.CONFIRM_PASSWORD_NO_MATCH;
 
     Class<?>[] groups() default {};
 
