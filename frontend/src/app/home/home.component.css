@@ -45,7 +45,7 @@
 
 .description h2 {
   font-size: 2em;
-  margin: 0;
+  color: #333;
 }
 
 .description p {
@@ -77,27 +77,4 @@
 
 .group svg {
   margin-inline-start: 0.25rem;
-}
-
-.contact button {
-  margin: 10px;
-  padding: 10px;
-  --bg: #1d1d1d;
-  --hover-bg: #90e9ff;
-  --hover-text: #1d1d1d;
-  box-shadow: 2px 2px 2px #90e9ff;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid var(--bg);
-  border-radius: 4px;
-  padding: 0.8em 2em;
-  background: var(--bg);
-  transition: 0.2s;
-}
-
-.contact button:hover {
-  color: var(--hover-text);
-  transform: translate(-2px, -2px);
-  background: var(--hover-bg);
-  box-shadow: 2px 2px 5px var(--bg);
 }

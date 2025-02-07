@@ -56,7 +56,7 @@ header {
 }
 
 .input::placeholder {
-  color: #94a3b8;
+  color: #707070;
 }
 
 .input:focus,
@@ -78,4 +78,15 @@ input:hover {
   fill: none;
   width: 5rem;
   height: 5rem;
+}
+
+.icon3 {
+  position: relative;
+  fill: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.a {
+  text-decoration: none;
 }

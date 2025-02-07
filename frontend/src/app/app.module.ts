@@ -1,8 +1,9 @@
 import { AppComponent } from './app.component';
-import { AppRoutes } from './app.routes';
-import { bootstrapApplication } from '@angular/platform-browser';
+import { routes } from './app.routes';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
+import { provideRouter, RouterModule } from '@angular/router';
 
 bootstrapApplication(AppComponent, {
-  providers: [provideHttpClient(), AppRoutes],
+  providers: [provideRouter(routes), provideHttpClient()],
 });

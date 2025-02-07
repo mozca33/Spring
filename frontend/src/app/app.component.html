@@ -6,52 +6,63 @@
     </div>
 
     <nav class="navigation">
-      <a href="/" routerLinkActive="active">Home</a>
-      <!--<a href="/about" routerLinkActive="active">About Us</a>-->
-      <a href="/portfolio" routerLinkActive="active">Portfolio</a>
+      <a [routerLink]="['/']" routerLinkActive="active">Home</a>
+      <a [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a>
     </nav>
 
-    <nav class="login">
-      <img class="icon" src="assets/login-icon.svg" alt="Login Icon" />
-      <button class="login-button" aria-label="Login">Login</button>
-    </nav>
+    <div class="corner-btn">
+      <nav class="login">
+        <button
+          aria-label="Login"
+          (click)="modalService.openLoginModal()"
+          type="menu"
+        >
+          <img class="icon" src="assets/login-icon.svg" alt="Login Icon" />
+          Login
+        </button>
+      </nav>
+
+      <nav class="register">
+        <button
+          aria-label="Register"
+          (click)="modalService.openRegisterModal()"
+        >
+          <img
+            class="icon"
+            src="assets/register-icon.svg"
+            alt="Register Icon"
+          />
+          Cadastre-se
+        </button>
+      </nav>
+    </div>
   </header>
 
   <main class="app-main">
     <div class="content">
-      <router-outlet />
+      <router-outlet></router-outlet>
     </div>
   </main>
-  <div class="link-group">
-    <!--fazer a adição de uma lista dinamicamente-->
-    @for (item of [ { title: 'Repositório deste Projeto',
-    link:'https://github.com/mozca33/Spring' }, { title: 'Linkedin',
-    link:'https://www.linkedin.com/in/rafael-f-cordeiro-1a2744214/' }, { title:
-    'Instagram', link: 'https://www.instagram.com/rafaelf.c/' }, ]; track
-    item.title) {
-    <a class="links" [href]="item.link" target="_blank" rel="noopener">
-      <span>{{ item.title }}</span>
-      <img class="icon" src="assets/link-icon.svg" alt="Arrow" />
-    </a>
-    }
-  </div>
-</body>
 
-<footer class="footer">
-  <div class="social-links">
-    <a
-      href="https://github.com/mozca33/"
-      aria-label="Github"
-      target="_blank"
-      rel="noopener"
-    >
-      <img
-        class="icon"
-        src="../assets/github-icon.svg"
-        alt="Github"
-        placeholder="Github"
-      />
+  <app-login-modal
+    *ngIf="modalService.isLoginModalOpen$ | async"
+  ></app-login-modal>
+
+  <app-register-modal
+    *ngIf="modalService.isRegisterModalOpen$ | async"
+  ></app-register-modal>
+
+  <div class="link-group" *ngFor="let item of links">
+    <a class=""></a>
+    <a class="links" [href]="item.link" target="_blank" rel="noopener">
+      <span
+        >{{ item.title }}
+        <img class="icon" src="{{ item.src }}" alt="Link icon" />
+      </span>
     </a>
   </div>
-  <p>&copy; 2025</p>
-</footer>
+
+  <footer class="footer">
+    <p>&copy; 2025 - Rafael Felipe Cordeiro</p>
+  </footer>
+</body>
