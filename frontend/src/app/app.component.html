@@ -52,17 +52,15 @@
     *ngIf="modalService.isRegisterModalOpen$ | async"
   ></app-register-modal>
 
-  <div class="link-group" *ngFor="let item of links">
-    <a class=""></a>
-    <a class="links" [href]="item.link" target="_blank" rel="noopener">
-      <span
-        >{{ item.title }}
-        <img class="icon" src="{{ item.src }}" alt="Link icon" />
-      </span>
-    </a>
-  </div>
-
   <footer class="footer">
+    <div class="link-group" *ngFor="let item of links">
+      <a class="links" [href]="item.link" target="_blank" rel="noopener">
+        <span>
+          {{ item.title }}
+        </span>
+        <img class="icon" src="{{ item.src }}" alt="Link icon" />
+      </a>
+    </div>
     <p>&copy; 2025 - Rafael Felipe Cordeiro</p>
   </footer>
 </body>

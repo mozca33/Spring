@@ -1,29 +1,103 @@
 /* Estilos Globais */
-:host {
-  --mint-cream: #f7fff6;
-  --celadon: #bcebcb;
-  --light-cream: #87d68d;
-  --cambridge-green: #93b48b;
-  --cool-gray: #8491a3;
-  --light-cyan: #dffdff;
-  --powder-blue: #90bede;
+:root {
+  /* Color Palette */
+  --red2: #FCEDED;
+  --red2: #F7C2C2;
+  --red3: #F28A8C;
+  --red4: #EF4044;
+  --red5: #B4272B;
+  --red6: #781719;
+  --red7: #420809;
 
-  --gray-900: oklch(19.37% 0.006 300.98);
-  --gray-700: oklch(36.98% 0.014 302.71);
-  --gray-400: oklch(70.9% 0.015 304.04);
+  --green1:#B1FECB;
+  --green2:#33E085;
+  --green3:#27B46A;
+  --green4:#1C8A50;
+  --green5:#116338;
+  --green6:#073E21;
+  --green7:#021C0C;
 
-  --background: #6aa1a0;
-  --title: #464d77;
-  --button: #877666;
-  --text: #2e2e2e;
+  --blue1: #D2E1FC;
+  --blue2: #8FBBF8;
+  --blue3: #3796ED;
+  --blue4: #2771B4;
+  --blue5: #184E7E;
+  --blue6: #0B2D4C;
+  --blue7: #021222;
+  --gray-blue: #3A506B;
+  --gray-blue2: #8D99AE;
+  --turquese: #73C2BE ;
+
+  --neutral1: #F1F0F0;
+  --neutral2: #D1CECE;
+  --neutral3: #ADA6A6;
+  --neutral4: #8D7F7F;
+  --neutral5: #675C5C;
+  --neutral6: #433B3B;
+  --neutral7: #221E1E;
+
+  --yellow: #FFD166;
+  --orange: #FF6B35;
+
+  --color-1: #d8e5f8;
+  --color-2: #98bfee;
+  --color-3: #589bd7;
+  --color-4: #4175A4;
+  --color-5: #2b5174;
+  --color-6: #183047;
+  --color-7: #06121d;
+  --color-8: #dafbbe;
+  --color-9: #AADF72;
+  --color-10: #89b55b;
+  --color-11: #6a8d46;
+  --color-12: #4d6731;
+  --color-13: #31431e;
+  --color-14: #17220c;
+  --color-15: #a4f6f6;
+  --color-16: #7ecdcd;
+  --color-17: #64a4a4;
+  --color-18: #4b7d7d;
+  --color-19: #335858;
+  --color-20: #1d3636;
+  --color-21: #091616;
+  --color-22: #f0ed59;
+  --color-23: #c7c448;
+  --color-24: #9F9D38;
+  --color-25: #797729;
+  --color-26: #55541a;
+  --color-27: #33330c;
+  --color-28: #151403;
+  --color-29: #bffcfa;
+  --color-30: #69e8e5;
+  --color-31: #54bdbb;
+  --color-32: #409593;
+  --color-33: #2e6e6c;
+  --color-34: #1C4948;
+  --color-35: #0c2727;
+  --color-36: #f2dcdd;
+  --color-37: #e3acad;
+  --color-38: #d87879;
+  --color-39: #BA4A4C;
+  --color-40: #833233;
+  --color-41: #501b1c;
+  --color-42: #230808;
+  --color-43: #e3e4e5;
+  --color-44: #babcbf;
+  --color-45: #93969b;
+  --color-46: #6f7175;
+  --color-47: #4d4e51;
+  --color-48: #2d2e30;
+  --color-49: #101112;
+
 }
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  background-color: var(--mint-cream);
+  background-color: var(--red2);
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 main {
@@ -40,7 +114,6 @@ header {
 }
 
 .input {
-  width: 100%;
   height: 40px;
   line-height: 30px;
   padding: 0 5rem;
@@ -48,8 +121,8 @@ header {
   border: 2px solid transparent;
   border-radius: 10px;
   outline: none;
-  background-color: #ebebeb;
-  color: #0d0c22;
+  background-color: var(--neutral1);
+  color: var(--neutral7);
   transition: 0.5s ease;
   margin: 7px;
   overflow-wrap: break-word;
@@ -62,31 +135,45 @@ header {
 .input:focus,
 input:hover {
   outline: none;
-  background-color: #fff;
+  background-color: var(--neutral1);
   box-shadow: 0 0 5px 5px rgb(129 140 248 / 30%);
 }
 
 .icon {
   position: relative;
-  fill: none;
   width: 1rem;
   height: 1rem;
 }
 
 .icon2 {
   position: relative;
-  fill: none;
   width: 5rem;
   height: 5rem;
 }
 
 .icon3 {
   position: relative;
-  fill: none;
   width: 2rem;
   height: 2rem;
 }
 
 .a {
+  text-decoration: none;
+}
+
+.h1 {
+  text-decoration: none;
+}
+
+
+.h2 {
+  text-decoration: none;
+}
+
+.h3 {
+  text-decoration: none;
+}
+
+.span {
   text-decoration: none;
 }
