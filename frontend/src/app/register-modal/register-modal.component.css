@@ -1,3 +1,5 @@
+@import "../../styles.css";
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -53,29 +55,25 @@ input::placeholder {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  background-color: transparent;
+  background-color: var(--green5);
   text-decoration: none;
-  color: rgb(29, 148, 65);
-  border: 2px solid #5f975f;
+  color: var(--neutral1);
+  border: 2px solid transparent;
   border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #0c992a;
+  box-shadow: inset 0 0 0 0 var(--green1);
   font-size: 18px;
   transition: ease-out 0.3s;
 }
 
 .register-btn:hover {
-  color: white;
-  box-shadow: inset 500px 0 0 0 #0c992a;
-  border: 2px solid #0c992a;
+  color: var(--neutral7);
+  box-shadow: inset 500px 0 0 0 var(--green2);
+  background-color: var(--green2);
+  border: 2px solid transparent;
 }
 
 .register-btn:active {
   transform: scale(0.9);
-}
-
-.error-message {
-  color: red;
-  text-align: center;
 }
 
 .close-btn {
@@ -87,14 +85,23 @@ input::placeholder {
   cursor: pointer;
   color: red;
   cursor: pointer;
-  transition: color 0.3s; /* Cor vermelha */
+  transition: 0.3s; /* Cor vermelha */
   z-index: 600;
 }
 
-.validation {
-  color: #fceded;
+.close-btn img:hover {
+  scale: 1.1;
+  transition: 0.2s;
+  filter: brightness(300%);
 }
 
-.validation:enabled {
+.validation,
+.success-message {
+  color: #fceded;
+  text-align: center;
+}
+
+.error-message {
   color: #b4272b;
+  text-align: center;
 }

@@ -119,10 +119,14 @@ input::placeholder {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: red;
-  cursor: pointer;
   transition: color 0.3s; /* Cor vermelha */
   z-index: 600;
+}
+
+.close-btn:hover img {
+  scale: 1.1;
+  transition: 0.2s;
+  filter: brightness(300%);
 }
 
 .validation {

@@ -1,4 +1,4 @@
-package com.example.user.model;
+package com.example.app.user.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,10 +13,9 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import java.util.Date;
 
-import com.example.user.dto.UserDTO;
-import com.example.validator.ConstraintPatterns;
-import com.example.validator.ValidPassword;
-import com.example.validator.ValidationMessages;
+import com.example.app.utils.ConstraintPatterns;
+import com.example.app.utils.ValidPassword;
+import com.example.app.utils.ValidationMessages;
 
 @ValidPassword
 @Entity
@@ -60,6 +59,13 @@ public class User {
     private Date birthDate;
 
     // #region CONSTRUCTORS
+    public User() {
+        this.name = getName();
+        this.email = getEmail();
+        this.birthDate = getBirthDate();
+        this.password = getPassword();
+    }
+
     public User(String name, String email, Date birthDate, String password) {
         this.name = name;
         this.email = email;
@@ -133,17 +139,4 @@ public class User {
         this.birthDate = birthDate;
     }
     // #endregion
-
-    public UserDTO toUserDTO() {
-        UserDTO userDTO = new UserDTO();
-        userDTO.setId(this.id);
-        userDTO.setName(this.name);
-        userDTO.setEmail(this.email);
-        userDTO.setBirthDate(this.birthDate);
-        userDTO.setPhone(this.phone);
-        userDTO.setPassword(this.password);
-        userDTO.setSuccess(true);
-
-        return userDTO;
-    }
 }

@@ -7,12 +7,13 @@
 }
 
 .title {
-  background-color: var(--cambridge-green);
+  background-color: var(--green3);
   text-align: center;
-  border-radius: 20px;
-  outline: #333;
+  border-top-left-radius: 200px;
   padding: 50px;
   margin: 10px;
+  font-weight: 500;
+  box-shadow: 2px 2px 0 var(--green7);
 }
 
 .title h1 {
@@ -27,11 +28,25 @@
 }
 
 .description {
-  background-color: var(--cambridge-green);
-  border-radius: 20px;
+  background-color: var(--blue1-5);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 100px;
   position: relative;
-  transition: transform 0.3s ease;
   margin: 10px;
+  font-weight: 500;
+  box-shadow: 2px 2px 0 var(--blue7);
+  transition: 0.3s ease;
+}
+
+.description:hover {
+  transform: translateY(-10px);
+  border-radius: 10px;
+}
+
+.description a {
+  text-decoration: none;
 }
 
 .description-text {
@@ -52,10 +67,6 @@
   font-size: 1.3em;
 }
 
-.description:hover {
-  transform: translateY(-10px);
-}
-
 .description:hover .arrow {
   padding-left: 100px;
   transition: 0.3s;
@@ -63,6 +74,7 @@
 }
 
 .arrow {
+  left: 35%;
   opacity: 50%;
   transition: padding-left 0.3s, opacity 0.3s;
 }

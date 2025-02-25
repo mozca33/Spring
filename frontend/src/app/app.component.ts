@@ -23,24 +23,23 @@ import { LoginModalComponent } from './login-modal/login-modal.component';
 export class AppComponent implements OnInit {
   constructor(public modalService: ModalService) {}
 
-  title = 'App Project';
-  description = 'Sobre mim';
-  mensagem!: String;
+  title = 'Cardify';
+
   links = [
     {
-      title: 'Repositório',
+      title: 'Github',
       link: 'https://github.com/mozca33/Spring',
-      src: 'assets/github-icon.svg',
+      src: '/app/assets/github-icon.svg',
     },
     {
       title: 'LinkedIn',
       link: 'https://www.linkedin.com/in/rafael-f-cordeiro-1a2744214',
-      src: 'assets/linkedin-icon.svg',
+      src: '/app/assets/linkedin-icon.svg',
     },
     {
       title: 'Instagram',
       link: 'https://www.instagram.com/rafaelf.c/',
-      src: 'assets/instagram-icon.svg',
+      src: '/app/assets/instagram-icon.svg',
     },
   ];
 

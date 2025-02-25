@@ -1,7 +1,7 @@
 <body>
   <header class="app-header">
     <div class="logo">
-      <img src="assets/logo-icon.svg" alt="Logo Icon" class="logo-icon" />
+      <img src="/app/assets/logo-icon.svg" alt="Logo Icon" class="logo-icon" />
       <span class="portfolio">{{ title }}</span>
     </div>
 
@@ -17,7 +17,7 @@
           (click)="modalService.openLoginModal()"
           type="menu"
         >
-          <img class="icon" src="assets/login-icon.svg" alt="Login Icon" />
+          <img class="icon" src="/app/assets/login-icon.svg" alt="Login Icon" />
           Login
         </button>
       </nav>
@@ -29,7 +29,7 @@
         >
           <img
             class="icon"
-            src="assets/register-icon.svg"
+            src="/app/assets/register-icon.svg"
             alt="Register Icon"
           />
           Cadastre-se
@@ -52,13 +52,16 @@
     *ngIf="modalService.isRegisterModalOpen$ | async"
   ></app-register-modal>
 
-  <div class="link-group" *ngFor="let item of links">
-    <a class=""></a>
-    <a class="links" [href]="item.link" target="_blank" rel="noopener">
-      <span
-        >{{ item.title }}
-        <img class="icon" src="{{ item.src }}" alt="Link icon" />
-      </span>
+  <div class="link-group" *ngFor="let item of links; let i = index">
+    <a
+      class="links"
+      [href]="item.link"
+      target="_blank"
+      rel="noopener"
+      [ngClass]="'item-' + i"
+    >
+      <span>{{ item.title }} </span>
+      <img class="icon" src="{{ item.src }}" alt="Link icon" />
     </a>
   </div>
 

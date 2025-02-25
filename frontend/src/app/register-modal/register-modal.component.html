@@ -2,7 +2,7 @@
   <div class="modal-content" (click)="$event.stopPropagation()">
     <h2>Cadastre-se</h2>
     <button class="close-btn" (click)="modalService.closeRegisterModal()">
-      <img class="icon3" src="assets/close-icon.svg" />
+      <img class="icon3" src="/app/assets/close-icon.svg" />
     </button>
     <form (ngSubmit)="register()">
       <div>
@@ -63,6 +63,15 @@
               {{ message }}
             </li>
           </ul>
+        </div>
+        <div
+          *ngIf="resultMessage"
+          [ngClass]="{
+            'success-message': isSuccess,
+            'error-message': !isSuccess
+          }"
+        >
+          {{ resultMessage }}
         </div>
         <button class="register-btn" type="submit">Cadastrar</button>
       </div>
