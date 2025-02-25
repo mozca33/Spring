@@ -1,4 +1,4 @@
-package com.example.user.dto;
+package com.example.app.user.dto;
 
 import java.util.Date;
 

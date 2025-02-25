@@ -1,4 +1,4 @@
-package com.example.validator;
+package com.example.app.utils;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

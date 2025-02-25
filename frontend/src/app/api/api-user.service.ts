@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { catchError, map, Observable, of } from 'rxjs';
 import { ModalService } from '../modal.service';
 import { Router } from '@angular/router';
+import { RegisterModalComponent } from '../register-modal/register-modal.component';
 
 @Injectable({
   providedIn: 'root',
@@ -17,18 +18,24 @@ export class ApiService {
   private apiRegisterURL = 'http://localhost:8080/api/user/register';
   private apiLoginURL = 'http://localhost:8080/api/user/login';
 
+  get<T>(url: string): Observable<T> {
+    return this.http.get<T>(url);
+  }
+
+  post<T>(url: string, body: any): Observable<T> {
+    return this.http.post<T>(url, body);
+  }
+
   login(email: String, password: String) {
     const loginData = {
       email: email,
       password: password,
     };
 
-    console.log(this.apiLoginURL);
-
     this.http.post(this.apiLoginURL, loginData).subscribe({
       next: (response) => {
         alert('Login bem sucedido!');
-        this.router.navigate(['/home']);
+        this.modalService.closeLoginModal();
       },
     });
   }
@@ -47,21 +54,13 @@ export class ApiService {
       confirmPassoword: confirmPassword,
       birthDate: birthDate,
     };
-    console.log('aq');
-    this.http.post(this.apiRegisterURL, registerData).subscribe({
-      next: (response) => {
-        console.log(
-          'Registro efetuado com sucesso, confirme seu email.',
-          response
-        );
-      },
-      error: (err) => {
-        alert('Error ocurred: ' + err.message);
-      },
-    });
-
-    this.router.navigate(['/login']);
-
-    return of(null);
+    return this.http.post(this.apiRegisterURL, registerData).pipe(
+      map((response) => {
+        return { success: true, message: 'Registro efetuado com sucesso!' };
+      }),
+      catchError((err) => {
+        return of({ success: false, message: err.error.message });
+      })
+    );
   }
 }

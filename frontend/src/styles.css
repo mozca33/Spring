@@ -1,29 +1,61 @@
 /* Estilos Globais */
 :host {
-  --mint-cream: #f7fff6;
-  --celadon: #bcebcb;
-  --light-cream: #87d68d;
-  --cambridge-green: #93b48b;
-  --cool-gray: #8491a3;
-  --light-cyan: #dffdff;
-  --powder-blue: #90bede;
+  --red: #b4272b;
 
-  --gray-900: oklch(19.37% 0.006 300.98);
-  --gray-700: oklch(36.98% 0.014 302.71);
-  --gray-400: oklch(70.9% 0.015 304.04);
+  --cream: #fff9ee;
+  --cream2: #f2e3c6;
+  --cream3: #e9d3a8;
 
-  --background: #6aa1a0;
-  --title: #464d77;
-  --button: #877666;
-  --text: #2e2e2e;
+  --soft-gold: #ffcd6f;
+  --deep-blue: #3a617c;
+  --soft-blue: #5577b6;
+  --olive: #6a7f3d;
+  --gray: #7e6f6a;
+  --deep-brown: #5b3a29;
+  --red-text: #f8b2b3;
+
+  --red1: #fceded;
+  --red2: #f7c2c2;
+  --red3: #f28a8c;
+  --red4: #ef4044;
+  --red5: #b4272b;
+  --red6: #781719;
+  --red7: #420809;
+
+  --blue1: #d2e1fc;
+  --blue1-5: #8aaad8;
+  --blue2: #8fbbf8;
+  --blue3: #3796ed;
+  --blue4: #2771b4;
+  --blue5: #184e7e;
+  --blue6: #0b2d4c;
+  --blue7: #021222;
+
+  --green1: #b3fef4;
+  --green2: #90ccbc;
+  --green3: #72a396;
+  --green4: #567c72;
+  --green5: #3c5850;
+  --green6: #233530;
+  --green7: #0c1613;
+
+  --neutral1: #f1f0f0;
+  --neutral2: #d1cece;
+  --neutral3: #ada6a6;
+  --neutral4: #8d7f7f;
+  --neutral5: #675c5c;
+  --neutral6: #433b3b;
+  --neutral7: #221e1e;
 }
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  background-color: var(--mint-cream);
   overflow-x: hidden;
+  font-weight: 500;
+  margin: 0;
+  background-color: var(--cream);
 }
 
 main {
@@ -32,11 +64,6 @@ main {
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-header {
-  border-radius: 20px;
-  margin-top: 5px;
 }
 
 .input {
@@ -48,22 +75,21 @@ header {
   border: 2px solid transparent;
   border-radius: 10px;
   outline: none;
-  background-color: #ebebeb;
-  color: #0d0c22;
   transition: 0.5s ease;
   margin: 7px;
   overflow-wrap: break-word;
 }
 
 .input::placeholder {
-  color: #707070;
+  color: #b9b9b9;
 }
 
 .input:focus,
 input:hover {
   outline: none;
   background-color: #fff;
-  box-shadow: 0 0 5px 5px rgb(129 140 248 / 30%);
+  box-shadow: 0 0 4px 4px var(--blue2);
+  transition: 0.2s;
 }
 
 .icon {
@@ -89,4 +115,5 @@ input:hover {
 
 .a {
   text-decoration: none;
+  color: var(--neutral7);
 }

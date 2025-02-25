@@ -16,9 +16,6 @@ export class UserValidationService {
     if (!email) {
       validationMessages.push('O e-mail deve ser preenchido.');
       valid = false;
-    } else if (!this.isValidEmail(email)) {
-      validationMessages.push('O e-mail deve ser válido.');
-      valid = false;
     }
 
     if (!password) {
@@ -40,30 +37,32 @@ export class UserValidationService {
     let valid = true;
 
     if (!name) {
-      validationMessages.push('O nome deve ser preenchido.');
+      validationMessages.push('O nome deve ser preenchido.<br/>');
       valid = false;
     }
 
     if (!email) {
-      validationMessages.push('O e-mail deve ser preenchido.');
+      validationMessages.push('O e-mail deve ser preenchido.<br/>');
       valid = false;
     } else if (!this.isValidEmail(email)) {
-      validationMessages.push('O e-mail deve ser válido.');
+      validationMessages.push('O e-mail deve ser válido.<br/>');
       valid = false;
     }
 
     if (!password) {
-      validationMessages.push('A senha deve ser preenchida.');
+      validationMessages.push('A senha deve ser preenchida.<br/>');
       valid = false;
     } else {
-      validationMessages.push('A senha deve ter ao menos:<br/>');
-      console.log(valid);
       if (password.length < 6) {
         validationMessages.push('- Mais de 6 caracteres.<br/>');
         valid = false;
       }
       if (!/[A-Z]/.test(password)) {
         validationMessages.push('- Uma letra maiúscula.<br/>');
+        valid = false;
+      }
+      if (!/[a-z]/.test(password)) {
+        validationMessages.push('- Uma letra minúscula.<br/>');
         valid = false;
       }
       if (!/\d/.test(password)) {
@@ -74,20 +73,25 @@ export class UserValidationService {
         validationMessages.push('- Um caractere especial.<br/>');
         valid = false;
       }
+      if (validationMessages.length > 0) {
+        validationMessages.unshift('A senha deve ter ao menos:<br/>');
+      }
     }
 
     // Verificar se as senhas coincidem
     if (password !== confirmPassword) {
-      validationMessages.push('As senhas não coincidem.');
+      validationMessages.push('As senhas não coincidem.<br/>');
       valid = false;
     }
 
     // Validação da data (idade entre 16 e 100 anos)
     if (!this.isValidDate(birthDateFormat)) {
-      validationMessages.push('A data de nascimento deve ser uma data válida.');
+      validationMessages.push(
+        'A data de nascimento deve ser uma data válida.<br/>'
+      );
       valid = false;
     }
-    console.log(valid);
+
     return valid;
   }
 

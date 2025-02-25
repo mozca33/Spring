@@ -1,4 +1,4 @@
-package com.example.validator;
+package com.example.app.utils;
 
 public class ConstraintPatterns {
     public static final String PASSWORD_PATTERN = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!()]).*$";
