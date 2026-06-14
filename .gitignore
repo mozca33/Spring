@@ -31,3 +31,15 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Added: keep portfolio clean ###
+# Archives (no more 48MB backend.zip)
+*.zip
+# Logs
+logs/
+*.log
+backend/logs/
+# Node / Angular
+node_modules/
+frontend/dist/
+frontend/.angular/
